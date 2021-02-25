@@ -15,7 +15,7 @@
         </encoder>
     </appender>
 
-    <logger name="projects.goodthoughts" level="DEBUG"/>
+    <logger name="projects.goodthoughts" level="TRACE"/>
 
     <root level="WARN">
         <appender-ref ref="FILE" />
