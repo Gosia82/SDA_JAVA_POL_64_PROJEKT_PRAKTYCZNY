@@ -1,5 +1,8 @@
 package projects.todolist.model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.time.LocalDateTime;
 
 public class Task {
@@ -8,6 +11,7 @@ public class Task {
     private LocalDateTime createdOn;// data utworzenia zadania
     private LocalDateTime expectedCompletedOn;// oczekiwana data zakończenia
     private LocalDateTime comlpetedOn;//faktyczna data zakończenia
+    private static final Logger logger = LoggerFactory.getLogger(Task.class);
 
     public Task() {
     }
@@ -62,4 +66,6 @@ public class Task {
         result = 31 * result + (createdOn != null ? createdOn.hashCode() : 0);
         return result;
     }
+
+
 }
