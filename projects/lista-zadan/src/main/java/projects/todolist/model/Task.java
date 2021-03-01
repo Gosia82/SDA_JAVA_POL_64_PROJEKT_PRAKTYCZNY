@@ -11,7 +11,7 @@ public class Task {
     private LocalDateTime createdOn;// data utworzenia zadania
     private LocalDateTime expectedCompletedOn;// oczekiwana data zakończenia
     private LocalDateTime comlpetedOn;//faktyczna data zakończenia
-    private static final Logger logger = LoggerFactory.getLogger(Task.class);
+
 
     public Task() {
     }
